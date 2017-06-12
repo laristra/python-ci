@@ -3,3 +3,4 @@ language: python
 script:
   - echo "Hello World!"
   - python3 mytan.py
+5 < 3
