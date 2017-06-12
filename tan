@@ -3,4 +3,4 @@ import math
 x = ((math.sin(math.pi))/(math.cos(math.pi)))
 print x
 
-#prints math.tan(math.pi), but value is wrong
+
