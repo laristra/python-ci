@@ -1,4 +1,4 @@
-language: cpp
+language: python
 
 script:
   - echo "Hello World!"
