@@ -1,6 +1,9 @@
 codecov:
+  token: 8182df94-d89b-4855-a672-9351f130e719
   notify:
     require_ci_to_pass: yes
+    
+cat codecov.yml | curl --data-binary @- https://codecov.io/validate
 
 coverage:
   precision: 2
