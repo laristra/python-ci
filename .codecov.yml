@@ -1,13 +1,13 @@
 coverage:
-  precision: 2
-  round: down
-  range: 70...100
+    precision: 2
+    round: down
+    range: 70...100
 
-  status:
+status:
     project: true
     patch: true
     changes: false
 
 comment:
-  layout: "header, diff"
-behavior: default 
+    layout: "header, diff"
+    behavior: default 
