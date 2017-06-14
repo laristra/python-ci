@@ -1,7 +1,7 @@
 language: python
 
-install:
-  - pip install codecov
-
-after_success:
-  - codecov
+ script:
+ - pip install codecov
+ - pip install coverage
+ - coverage run mytan.py
+ - coverage report -m 
