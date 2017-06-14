@@ -1,5 +1,8 @@
 language: python
 
 script:
+  - pip install codecov
+  - pip install coverage
   - echo "Hello World!"
-  - python3 mytan.py
+  - coverage run mytan.py
+  - coverage report -m 
