@@ -1,0 +1,8 @@
+coverage:
+  precision: 1
+  round: down
+  range: "70...100"
+ignore:
+- tests/test.c
+codecov:
+  token: 8182df94-d89b-4855-a672-9351f130e719
