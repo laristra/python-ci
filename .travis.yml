@@ -1,8 +1,15 @@
+sudo: false
+
 language: python
 
-script:
+python:
+  - 2.7
+
+install:
   - pip install codecov
-  - pip install coverage
-  - echo "Hello World!"
-  - coverage run mytan.py
-  - coverage report -m 
+
+script:
+  - coverage run tests.py
+
+after_success:
+- codecov
