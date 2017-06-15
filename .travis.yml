@@ -13,7 +13,7 @@ script:
   
 unittest:
   - pip install coverage
-  - coverage run tests.py
+  - coverage run mytan.py
 
 # addons:
   # sonarqube:
