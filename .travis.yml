@@ -4,15 +4,17 @@ language: python
 
 before_install:
   - sudo pip install codecov
-unittest:
+  
+install:
   -pip install coverage
--coverage run tests.py
+
 
 after_success:
   - codecov
   
 script:
   - echo "hello world"
+  - coverage run tests.py
 
 # addons:
   # sonarqube:
