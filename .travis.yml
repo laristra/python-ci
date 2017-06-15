@@ -9,7 +9,6 @@ after_success:
   - codecov
   
 script:
-  - echo "hello world"
   - codecov
   
 unittest:
