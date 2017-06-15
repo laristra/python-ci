@@ -10,7 +10,6 @@ after_success:
   
 script:
   - echo "hello world"
-  - sonar-scanner
   
 # addons:
   # sonarqube:
@@ -20,3 +19,4 @@ script:
 #script:
   #other script steps might be done before running the actual SonarQube analysis
  # - sonar-scanner
+#these all fail to build
