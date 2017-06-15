@@ -17,6 +17,5 @@ script:
     #token:
     #secure: •••••••••••••••• # encrypted value of your token
 #script:
-  #other script steps might be done before running the actual SonarQube analysis
  # - sonar-scanner
 #these all fail to build
