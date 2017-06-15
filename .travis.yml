@@ -2,9 +2,6 @@ sudo: false
 
 language: python
 
-install:
-  - pip install codecov
-
 dist:
   - trusty
 
@@ -18,5 +15,4 @@ after_success:
      # secure: •••••••••••••••• # encrypted value of your token
 #script:
   # other script steps might be done before running the actual SonarQube analysis
- # - coverage run tests.py
  # - sonar-scanner
