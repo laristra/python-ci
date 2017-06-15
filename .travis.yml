@@ -3,5 +3,8 @@ language: python
 install:
   - pip install codecov
 
+dist:
+  - trusty
+
 after_success:
   - codecov
