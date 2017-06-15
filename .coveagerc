@@ -1,4 +1,4 @@
-oveagerc
+coveagerc
 [run]
 branch = True
 source = python_ci
