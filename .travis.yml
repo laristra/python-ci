@@ -11,10 +11,6 @@ after_success:
 script:
   - coverage run mytan.py
   - codecov
-  
-  
-# unittest:
- # - pip install coverage
 
 # addons:
   # sonarqube:
