@@ -10,7 +10,6 @@ after_success:
   
 script:
   - echo "hello world"
-  - coverage run tests.py
   
 # addons:
   # sonarqube:
