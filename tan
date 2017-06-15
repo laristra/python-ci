@@ -1,6 +1,0 @@
-from __future__ import division
-import math
-x = ((math.sin(3))/(math.cos(3)))
-print x
-
-
