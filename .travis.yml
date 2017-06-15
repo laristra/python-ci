@@ -7,10 +7,10 @@ before_install:
   
 unittest:
   -pip install coverage
+  -coverage run tests.py
 
 script:
   - echo "hello world"
-  - coverage run tests.py
 
 after_success:
   - codecov
