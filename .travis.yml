@@ -10,6 +10,7 @@ after_success:
   
 script:
   - echo "hello world"
+  - codecov
   
 unittest:
   - pip install coverage
