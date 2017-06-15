@@ -1,9 +1,9 @@
-sudo: false
+sudo: require
 
 language: python
 
-dist:
-  - trusty
+before_install:
+  - sudo pip install codecov
 
 after_success:
   - codecov
