@@ -12,8 +12,8 @@ script:
   - echo "hello world"
   
 unittest:
-  -pip install coverage
-  -coverage run tests.py
+  - pip install coverage
+  - coverage run tests.py
 
 # addons:
   # sonarqube:
