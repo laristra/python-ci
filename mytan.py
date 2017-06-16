@@ -11,5 +11,7 @@ def test():
 
 if __name__ == "__main__":
     arg=float(sys.argv[1])
+    arg=3.0
+    mytan(arg)=-0.142546543074
     print "Tan of %s is %s" % (arg, mytan(arg))
 
