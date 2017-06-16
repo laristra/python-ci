@@ -20,5 +20,6 @@ script:
   - codecov
   - sonar-scanner
 
-after_success:
-  - codecov
+#after_success:
+  #- codecov
+  #unnecessary?
