@@ -1,17 +1,16 @@
 import math
-
+import sys
 def mytan(x):
+    '''mytan is a home grown tan function that relies on math.sin and math.cos'''
     y = math.sin(x)/math.cos(x)
-    return(y)
+    return y
 
-result = mytan(4)
-assert(round(mytan(3),5)==round(-0.142546543074,5))
-assert(round(mytan(3.14),5)==round(-0.0015926549364,5))
-assert(round(mytan(2.5),5)==round(math.tan(2.5),5))
+def test():
+    print "mytan tests"
+    assert(round(mytan(3),5)==round(-0.142546543074,5))
+    assert(round(mytan(3.14),5)==round(-0.0015926549364,5))
+    assert(round(mytan(2.5),5)==round(math.tan(2.5),5))
 
-def factorial(x):
-    if x > 0:
-        y = math.factorial(x)
-        return(y)
-# result = factorial(7)
-# print result
+if __name__ == "__main__":
+    arg=sys.argv[1]
+    print "Tan of %s is %s" % (arg, mytan(float(arg)))
