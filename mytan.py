@@ -12,6 +12,5 @@ def test():
     assert(round(mytan(2.5),5)==round(math.tan(2.5),5))
 
 if __name__ == "__main__":
-    arg=sys.argv[1]
-    print "Tan of %s is %s" % (arg, mytan(float(arg)))
+    print "Tan of %s is %s" % (arg, mytan(float(sys.argv[1])))
 
