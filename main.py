@@ -7,6 +7,4 @@ def test():
 
 if __name__ == "__main__":
     arg=sys.argv[1]
-    print mytan(arg)
-
-#print "Tan of %s is %s" % (arg, mytan(float(arg)))
+    print mytan.mytan(arg)
