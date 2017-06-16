@@ -10,7 +10,7 @@ after_success:
   
 script:
   - coverage run mytan.py
-  - codecov
+
 
 # addons:
   # sonarqube:
