@@ -13,11 +13,10 @@ after_success:
 script:
   - coverage run mytan.py
   - codecov
-
-# addons:
-  # sonarqube:
-    #organization: "AAAAB3NzaC1yc2EAAAADAQABAAABAQC71STco3E1dDPZE89CuPpBGKGM13fceCYmnCn9Hqu/VNx13DCoohKfiTtnnidZqrYg0iZP326+z7L+p1oxPKVPrIYcRGTszeMUdP9GV2i/qEdJNTZShpI6lrsci9F2eE2X9zJizph9iqSrHsCFN+70GWrGs8oMNaO3h2U1364A+25mypyM6sxmReJn8KasTZsXhGEkyHak8xruMP0G1M0ZtF/hKT0dbBxN2KGQSmH2I0M/stXlzL++pPYVFkWQW2/i641SoQf5V+oXcqvUe+juz1m6c0zkd36jjyeBGDcYle9i6oBhWkUWeZXV5J5FA+yp8UNejkM3QCuQCHsRRG8t" # the key of the org you chose at step #3
-    #token:
-    #secure:  # encrypted value of your token
-#script:
-# - sonar-scanner
+  - sonar-scanner
+  
+ addons:
+  sonarqube:
+    organization: "laurelmcintyre-github" 
+    token:
+      secure: •••••••••••••••• 
