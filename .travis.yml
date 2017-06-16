@@ -7,15 +7,13 @@ language: python
 addons:
   sonarqube:
     organization: "laurelmcintyre-github" 
-#    token:
-#      secure: #how to get encrypted token from Travis?
-      #or do you just use the one that sonarqube gives you, or is that the private key
-      #seems like you have to gem install travis (which fails)
 
 before_install:
   - sudo pip install codecov
+  - sudo pip install nose
   
 script:
+  - nosetests mytan
   - coverage run mytan.py 42
   - codecov
   - sonar-scanner
