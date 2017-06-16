@@ -4,8 +4,8 @@ sudo: required
 
 language: python
 
-#addons:
-#  sonarqube:
+addons:
+  sonarqube
 #    organization: "laurelmcintyre-github" 
 #    token:
 #      secure: #how to get encrypted token from Travis?
