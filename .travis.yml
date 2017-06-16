@@ -1,22 +1,22 @@
+dist: trusty
+
 sudo: required
 
 language: python
 
-dist: trusty
+addons:
+  sonarqube:
+    organization: "laurelmcintyre-github" 
+    token:
+      secure: #how to get encrypted token from Travis?
 
 before_install:
   - sudo pip install codecov
   
-after_success:
-  - codecov
-  
- addons:
-  sonarqube:
-    organization: "laurelmcintyre-github" 
-    token:
-      secure:
-
 script:
   - coverage run mytan.py
   - codecov
   - sonar-scanner
+
+after_success:
+  - codecov
