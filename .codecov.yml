@@ -2,5 +2,5 @@ coverage:
   precision: 1
   round: down
   range: "70...100"
-#ignore:
-#- tests/test.c
+ignore:
+- tests/test.c
