@@ -9,6 +9,6 @@ def factorial(x):
 
 
 def test_myfactorial():
-	assert(myfactorial(4))==24
-	assert(myfactorial(7))==5040
-	assert(myfactorial(1))==1
+    assert(factorial(4))==24
+    assert(factorial(7))==5040
+    assert(factorial(1))==1
