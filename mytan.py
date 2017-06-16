@@ -11,5 +11,5 @@ def test_mytan():
 
 if __name__ == "__main__":
     arg=float(sys.argv[1])
-    print "Tan of %s is %s" % (arg, mytan(arg))
+    print("Tan of %s is %s" % (arg, mytan(arg)))
 
