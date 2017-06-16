@@ -7,3 +7,8 @@ def factorial(x):
 # result = factorial(7)
 # print result
 
+
+def test_myfactorial():
+	assert(myfactorial(4))==24
+	assert(myfactorial(7))==5040
+	assert(myfactorial(1))==1
