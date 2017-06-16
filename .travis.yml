@@ -9,14 +9,14 @@ before_install:
   
 after_success:
   - codecov
-
-script:
-  - coverage run mytan.py
-  - codecov
-  - sonar-scanner
   
  addons:
   sonarqube:
     organization: "laurelmcintyre-github" 
     token:
       secure: •••••••••••••••• 
+
+script:
+  - coverage run mytan.py
+  - codecov
+  - sonar-scanner
