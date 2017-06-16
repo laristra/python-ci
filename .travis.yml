@@ -16,7 +16,7 @@ before_install:
   - sudo pip install codecov
   
 script:
-  - coverage run mytan.py
+  - coverage run mytan.py 42
   - codecov
   - sonar-scanner
 
