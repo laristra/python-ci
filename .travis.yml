@@ -4,9 +4,6 @@ language: python
 
 before_install:
   - sudo pip install codecov
-
-after_success:
-  - codecov
   
 script:
   - coverage run mytan.py
