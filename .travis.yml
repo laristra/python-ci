@@ -14,7 +14,7 @@ after_success:
   sonarqube:
     organization: "laurelmcintyre-github" 
     token:
-      secure: •••••••••••••••• 
+      secure:
 
 script:
   - coverage run mytan.py
