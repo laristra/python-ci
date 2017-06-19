@@ -10,7 +10,7 @@ addons:
 
 before_install:
   - sudo pip install codecov
-  - sudo pip install nose
+  - sudo pip install nose2
   
 script:
   - nosetests --with-coverage mytan
