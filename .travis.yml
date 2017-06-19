@@ -13,7 +13,7 @@ before_install:
   - sudo pip install nose2
   
 script:
-  - nosetests --with-coverage mytan
+  - nose2
   - coverage run mytan.py 42
   - codecov
   - sonar-scanner
