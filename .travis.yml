@@ -15,7 +15,6 @@ before_install:
 script:
   - nosetests --with-coverage mytan
   - coverage run mytan.py 42
-  - coverage run main.py
   - codecov
   - sonar-scanner
 
