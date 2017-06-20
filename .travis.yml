@@ -13,7 +13,6 @@ addons:
 before_install:
   - sudo pip install codecov
   - sudo pip install nose2
-  - sudo pip install pydoc
   
 script:
   - nose2 --with-coverage mytan
