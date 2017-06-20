@@ -29,10 +29,11 @@ script:
 after_success: |
   if [ -n "$GITHUB" ]; then
     cd "$TRAVIS_BUILD_DIR"
-    # This generates a `web` directory containing the website.
+    pydoc -w TRAVIS_BUILD_DIR
     mkdir docs
+    mv *.html docs/.
     cd docs
-    pydoc -w $TRAVIS_BUILD_DIR
+    echo $TRAVIS_BUILD_DIR
     git init
     git checkout -b gh-pages
     git add .
