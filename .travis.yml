@@ -34,6 +34,7 @@ after_success: |
     mkdir docs
     mv *.html docs/.
     cd docs
+    cp ../README.md . 
     git init
     git checkout -b gh-pages
     git add .
