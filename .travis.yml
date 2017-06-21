@@ -18,7 +18,7 @@ addons:
     organization: "laurelmcintyre-github" 
 
 before_install:
-  - sudo pip install nose2
+  - sudo -H pip install nose2
   - sudo -H pip install codecov
   
 #install: pip install -r requirements.txt
