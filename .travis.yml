@@ -17,7 +17,7 @@ addons:
   sonarqube:
     organization: "laurelmcintyre-github" 
 
-before_install:
+install:
   - sudo -H pip install nose2
   - sudo -H pip install codecov
 
