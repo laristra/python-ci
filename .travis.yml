@@ -21,14 +21,11 @@ before_install:
   - sudo -H pip install nose2
   - sudo -H pip install codecov
   
-#install: pip install -r requirements.txt
-
 script:
   - nose2 --with-coverage mytan
   - coverage run mytan.py 42
   - codecov
   - sonar-scanner
- # - bundle exec rake test
 
 after_success: |
   if [ -n "$GITHUB" ]; then
