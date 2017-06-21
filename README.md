@@ -3,6 +3,6 @@
 [![codecov](https://codecov.io/gh/laurelmcintyre/python-ci/branch/master/graph/badge.svg)](https://codecov.io/gh/laurelmcintyre/python-ci)
 [![Quality Gate](https://sonarqube.com/api/badges/gate?key=python-ci%3Amaster)](https://sonarqube.com/dashboard?id=python-ci%3Amaster)
 
-Add link to main documentation
+[Link to main.html](main.html)
 
 [Link to Docker python-ci page](https://hub.docker.com/r/laurelmcintyre/python-ci/)
