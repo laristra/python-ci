@@ -28,7 +28,6 @@ script:
   - sonar-scanner
    - travis_retry docker build -t "$image" "${VARIANT:-.}"
   - ~/official-images/test/run.sh "$image"
-  - true && [ "$VARIANT" ] || travis_retry docker build -t "${image}-onbuild" onbuild
 
 after_success: |
   if [ -n "$GITHUB" ]; then
