@@ -17,10 +17,6 @@ addons:
   sonarqube:
     organization: "laurelmcintyre-github" 
 
-before_script:
-  - cd "$VERSION"
-  - image="$(awk '$1 == "FROM" { print $2; exit }' onbuild/Dockerfile)${VARIANT:+-$VARIANT}
-
 before_install:
   - sudo -H pip install nose2
   - sudo -H pip install codecov
