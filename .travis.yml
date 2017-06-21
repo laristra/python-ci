@@ -34,7 +34,7 @@ script:
   - coverage run mytan.py 42
   - codecov
   - sonar-scanner
-  - docker run -it $REPO:$COMMIT /bin/bash -c "cd tests.py"
+  - docker run -it $REPO:$COMMIT /bin/bash -c "cd python-ci"
 
 after_success: |
   if [ -n "$GITHUB" ]; then
