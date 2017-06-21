@@ -19,6 +19,7 @@ addons:
 
 before_install:
   - sudo pip install nose2
+  - sudo pip install codecov
   
 #install: pip install -r requirements.txt
 
