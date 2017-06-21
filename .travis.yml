@@ -26,8 +26,6 @@ script:
   - coverage run mytan.py 42
   - codecov
   - sonar-scanner
-   - travis_retry docker build -t "$image" "${VARIANT:-.}"
-  - ~/official-images/test/run.sh "$image"
 
 after_success: |
   if [ -n "$GITHUB" ]; then
@@ -42,6 +40,4 @@ after_success: |
     git -c user.name='travis' -c user.email='travis' commit -m init
     git push -f https://laurelmcintyre:$GITHUB@github.com/laurelmcintyre/python-ci gh-pages 
   fi
-  
-after_script:
-- docker images
+
