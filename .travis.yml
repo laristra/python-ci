@@ -28,7 +28,7 @@ script:
   - coverage run mytan.py 42
   - codecov
   - sonar-scanner
-  - bundle exec rake test
+ # - bundle exec rake test
   
 after_success: |
   if [ -n "$GITHUB" ]; then
