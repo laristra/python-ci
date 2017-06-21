@@ -29,8 +29,7 @@ script:
   - codecov
   - sonar-scanner
  # - bundle exec rake test
-  - docker pull laurelmcintyre/python-ci
-  
+
 after_success: |
   if [ -n "$GITHUB" ]; then
     cd "$TRAVIS_BUILD_DIR"
