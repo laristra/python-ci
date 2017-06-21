@@ -12,11 +12,19 @@ python:
 
 services:
   -docker
+  
+env:
+  global:
+    - COMMIT=${TRAVIS_COMMIT::8}
+- REPO=laurelmcintyre/python-ci
 
 addons:
   sonarqube:
     organization: "laurelmcintyre-github" 
 
+before_install:
+ - docker build -t $REPO:$COMMIT -t $REPO:latest .
+ 
 install:
   - sudo -H pip install nose2
   - sudo -H pip install codecov
@@ -26,6 +34,7 @@ script:
   - coverage run mytan.py 42
   - codecov
   - sonar-scanner
+  - docker run -it $REPO:$COMMIT /bin/bash -c "cd tests.py"
 
 after_success: |
   if [ -n "$GITHUB" ]; then
