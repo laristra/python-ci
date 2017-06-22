@@ -26,7 +26,7 @@ before_install:
   - docker build -t $REPO:$COMMIT -t $REPO:latest .
  
 install:
-  - sudo -H pip install nose2
+  - sudo -H pip install nose2 nose2-cov
   - sudo -H pip install codecov
 
 script:
