@@ -7,9 +7,6 @@ def main(z):
     a = (mytan.mytan(z)) * (myfactorial.factorial(z))
     return a
 
-def test():
-    print("main test")
-
 if __name__ == "__main__":
     arg=float(sys.argv[1])
-    print(mytan.mytan(arg))
+    print(mytan.mytan(arg) * myfactorial.factorial(arg))
