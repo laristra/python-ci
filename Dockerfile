@@ -1,6 +1,6 @@
 FROM python:2.7
 
 
-RUN PYTHON main.py
+RUN python:2.7 main.py
 
 COPY . /python-ci
