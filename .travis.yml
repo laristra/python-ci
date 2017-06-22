@@ -1,13 +1,13 @@
-#group: edge
+group: edge
 
 sudo: required
+
+dist: trusty
 
 services:
   -docker
 
 language: python
-
-dist: trusty
 
 python:
   - "2.7"
