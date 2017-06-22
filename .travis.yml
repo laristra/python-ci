@@ -5,7 +5,7 @@ sudo: required
 dist: trusty
 
 services:
-  -docker
+  - docker
 
 language: python
 
@@ -23,7 +23,7 @@ addons:
     organization: "laurelmcintyre-github" 
 
 before_install:
- - docker build -t $REPO:$COMMIT -t $REPO:latest .
+  - docker build -t $REPO:$COMMIT -t $REPO:latest .
  
 install:
   - sudo -H pip install nose2
