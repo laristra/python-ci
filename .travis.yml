@@ -19,7 +19,7 @@ env:
     - REPO=laurelmcintyre/python-ci
 
 addons:
-  sonarqube:
+  sonarcloud:
     organization: "laurelmcintyre-github" 
 
 before_install:
