@@ -30,8 +30,8 @@ install:
   - sudo -H pip install codecov
 
 script:
-  - nose2 --with-coverage mytan
-  - coverage run mytan.py 42
+  - nose2 --with-coverage main
+  - coverage run main.py 4
   - codecov
   - sonar-scanner
   - docker run -it $REPO:$COMMIT /bin/bash -c "cd python-ci"
